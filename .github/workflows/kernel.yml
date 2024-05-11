@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set targets
         id: find_targets
@@ -53,30 +53,30 @@ jobs:
 
     steps:
       - name: Checkout master directory
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: openwrt
 
       - name: Checkout packages feed
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: openwrt/packages
           path: openwrt/feeds/packages
 
       - name: Checkout luci feed
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: openwrt/luci
           path: openwrt/feeds/luci
 
       - name: Checkout routing feed
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: openwrt/routing
           path: openwrt/feeds/routing
 
       - name: Checkout telephony feed
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: openwrt/telephony
           path: openwrt/feeds/telephony
